@@ -12,7 +12,8 @@ builder.Services.Add(new ServiceDescriptor(typeof(Services.IndexService), typeof
 
 builder.Services.AddDbContext<MassageDbContext>(options =>
 {
-      options.UseMySql("Server=localhost;Database=massgtherapy;User=root;Password=zsl@Calgary23;",new MySqlServerVersion(new Version(8, 0, 23)));
+      //options.UseMySql("Server=localhost;Database=massgtherapy;User=root;Password=zsl@Calgary23;",new MySqlServerVersion(new Version(8, 0, 23)));
+    options.UseMySql("Server=myfirstmysqlazureshulin.mysql.database.azure.com;Database=massgtherapy;User=shulinz;Password=root2023.yyc;",new MySqlServerVersion(new Version(8, 0, 23)));
    });
 var app = builder.Build();
 
