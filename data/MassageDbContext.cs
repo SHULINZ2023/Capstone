@@ -30,6 +30,9 @@ public class MassageDbContext : DbContext
     public DbSet<MssgTherapy> MassageTherapies {get;set;}
     public DbSet<OfferedService> OfferedServices {get;set;}
     public DbSet<PrivateChef> PrivateChefs {get;set;}
+    public DbSet<Section> Sections {get;set;}
+    public DbSet<Customer> Customers {get;set;}
+    public DbSet<CustomerFeedback> CustomerFeedbacks{get;set;}
 }
 
 }

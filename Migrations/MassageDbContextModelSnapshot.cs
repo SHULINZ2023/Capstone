@@ -19,6 +19,81 @@ namespace myDotNetMVCApp.Migrations
                 .HasAnnotation("ProductVersion", "7.0.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("Models.Entities.Customer", b =>
+                {
+                    b.Property<long>("Customer_id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("Create_time")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Customer_address")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Customer_desc")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Customer_email")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Customer_name")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Customer_phone")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Customer_photo_uri")
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("Last_upt_time")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Customer_id");
+
+                    b.ToTable("Customers");
+                });
+
+            modelBuilder.Entity("Models.Entities.CustomerFeedback", b =>
+                {
+                    b.Property<long>("CustomerFeedback_id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("Create_time")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<long>("Customer_id")
+                        .HasColumnType("bigint");
+
+                    b.Property<double>("Feedback_Rate")
+                        .HasColumnType("double");
+
+                    b.Property<string>("Feedback_comments")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("Last_upt_time")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<long?>("OfferedService_id")
+                        .IsRequired()
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("CustomerFeedback_id");
+
+                    b.ToTable("CustomerFeedbacks");
+                });
+
             modelBuilder.Entity("Models.Entities.FutureEvent", b =>
                 {
                     b.Property<long>("FutureEvent_id")
@@ -354,6 +429,88 @@ namespace myDotNetMVCApp.Migrations
                     b.HasKey("PrivateChef_id");
 
                     b.ToTable("PrivateChefs");
+                });
+
+            modelBuilder.Entity("Models.Entities.Section", b =>
+                {
+                    b.Property<long>("Section_id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("Create_time")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Kind1_foto1_uri")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Kind1_foto2_uri")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Kind1_foto3_uri")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Kind1_foto4_uri")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Kind1_foto5_uri")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Kind2_foto1_uri")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Kind2_foto2_uri")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Kind2_foto3_uri")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Kind2_foto4_uri")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Kind2_foto5_uri")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Kind3_foto1_uri")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Kind3_foto2_uri")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Kind3_foto3_uri")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Kind3_foto4_uri")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Kind3_foto5_uri")
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("Last_upt_time")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Section_background_photo_uri")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Section_desc")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Section_name")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Section_video_link")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Setion_type")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Section_id");
+
+                    b.ToTable("Sections");
                 });
 #pragma warning restore 612, 618
         }
