@@ -19,6 +19,55 @@ namespace myDotNetMVCApp.Migrations
                 .HasAnnotation("ProductVersion", "7.0.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("Models.Entities.BusinessProfile", b =>
+                {
+                    b.Property<long>("BusinessProfile_id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("BusinessProfile_address")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("BusinessProfile_desc")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("BusinessProfile_email")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("BusinessProfile_name")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("BusinessProfile_owner")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("BusinessProfile_phone")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("BusinessProfile_photo_url")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("BusinessProfile_video_link")
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("Create_time")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<DateTime>("Last_upt_time")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("business_start_year")
+                        .HasColumnType("int");
+
+                    b.HasKey("BusinessProfile_id");
+
+                    b.ToTable("BusinessProfiles");
+                });
+
             modelBuilder.Entity("Models.Entities.Customer", b =>
                 {
                     b.Property<long>("Customer_id")
@@ -331,7 +380,7 @@ namespace myDotNetMVCApp.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("OfferedService_photo_url")
+                    b.Property<string>("OfferedService_photo_uri")
                         .HasColumnType("longtext");
 
                     b.Property<string>("OfferedService_video_link")
@@ -488,6 +537,10 @@ namespace myDotNetMVCApp.Migrations
                     b.Property<DateTime>("Last_upt_time")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<string>("Section_INNER_HTML")
+                        .HasMaxLength(30000)
+                        .HasColumnType("longtext");
+
                     b.Property<string>("Section_background_photo_uri")
                         .HasColumnType("longtext");
 
@@ -498,10 +551,13 @@ namespace myDotNetMVCApp.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("Section_video_link")
+                    b.Property<string>("Section_type")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("Setion_type")
+                    b.Property<string>("Section_video")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Section_video_link")
                         .HasColumnType("longtext");
 
                     b.Property<string>("Status")

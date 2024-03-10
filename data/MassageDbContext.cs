@@ -33,6 +33,7 @@ public class MassageDbContext : DbContext
     public DbSet<Section> Sections {get;set;}
     public DbSet<Customer> Customers {get;set;}
     public DbSet<CustomerFeedback> CustomerFeedbacks{get;set;}
+    public DbSet<BusinessProfile> BusinessProfiles{get;set;}
 }
 
 }

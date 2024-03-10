@@ -8,6 +8,8 @@ using System;
 using Data;
 using Models;
 using myDotNetMVCApp.Models;
+using Utilities;
+
 
 
 namespace Services
@@ -29,11 +31,12 @@ namespace Services
             var indexViewModel = new IndexViewModel()
             {
                 OfferedServices = _DbContext.OfferedServices.Where(e=>e.Status=="approved").ToList(),
-                 PrivateChefs = _DbContext.PrivateChefs.Where(e=>e.Status=="approved").ToList(),
-                 MssgTherapies= _DbContext.MassageTherapies.Where(e=>e.Status=="approved").ToList(),
-                 FutureEvents = _DbContext.FutureEvents.Where(e=>e.Status=="approved").ToList(),
+                 businessProfile = _DbContext.BusinessProfiles.FirstOrDefault() ?? throw new DataNotFoundException("BusinessProfile Not found"),
+                 sections = _DbContext.Sections.Where(e=>e.Status=="approved").ToList() ?? throw new DataNotFoundException("Sections Not found"),
+                 
             };
-       
+            var section_offeredService = indexViewModel.sections.Find(e=>e.Section_type=="OfferedServices"); 
+            _logger.LogInformation(section_offeredService.Section_desc);
 
             return indexViewModel;
         }

@@ -1,6 +1,38 @@
 @model Models.IndexViewModel
 @{
   var section_profile = Model.sections.Find(e=>e.Section_type=="BusinessProfile");
+  var inner_html = section_profile.Section_INNER_HTML.Replace("@BusinessProfile_address",
+  Model.businessProfile.BusinessProfile_address).Replace("@BusinessProfile_phone",
+  Model.businessProfile.BusinessProfile_phone).Replace("@BusinessProfile_email",Model.businessProfile.BusinessProfile_email);
+
+  // populate 2nd section OfferedService 
+  var section_offeredService = Model.sections.Find(e=>e.Section_type=="OfferedServices");  
+
+  var offeredService_inner_html = section_offeredService.Section_INNER_HTML.Replace("@Section_name",
+  section_offeredService.Section_name);
+  // populate offered service list
+
+  string template_inner_html="<div class=\"mb-4 mb-lg-0 col-sm-6 col-md-6 col-lg-3\">"
+      + "<div class=\"block-service-1-card\">"
+      + "<a href=\"#\" class=\"thumbnail-link d-block mb-4\"><img src=@OfferedService_photo_uri alt=\"Image\" class=\"img-fluid\"></a>"
+      +  "<h3 class=\"block-service-1-heading mb-3\"><a href=\"#\">@OfferedService_name</a></h3>"
+      +  "<div class=\"block-service-1-excerpt\"><p>@OfferedService_desc</p></div>"
+      +  "<p><a href=\"hathayoga.html\" class=\"d-inline-flex align-items-center block-service-1-more\"><span>Find out more</span> <span class=\"icon-keyboard_arrow_right icon\"></span></a></p>"
+      + "</div>"
+    + "</div>";
+    var serviceList_inner_html="";
+    foreach( var service in Model.OfferedServices)
+    {
+      var service_inner_html =  template_inner_html.Replace("@OfferedService_photo_uri",
+      service.OfferedService_photo_uri).Replace("@OfferedService_name",
+      service.OfferedService_name).Replace("@OfferedService_desc",service.OfferedService_desc);
+
+      serviceList_inner_html = serviceList_inner_html + service_inner_html;
+
+    }
+    //replace 
+    var final_offeredServiceList_inner_html = offeredService_inner_html.Replace("@OfferServiceList",serviceList_inner_html);
+
 }
 
 <!DOCTYPE html>
@@ -133,79 +165,13 @@
       </div>
     </div>  
 
+    <!-- Section 1 BusinessProfile -->
+    @Html.Raw(@inner_html)
 
+    <!-- Section 2 OfferedService -->
 
-    <div class="block-quick-info-2">
-      <div class="container">
-        <div class="block-quick-info-2-inner">
-          <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-3 mb-3 mb-lg-0">
-              <div class="d-flex quick-info-2">
-                <span class="icon icon-home mr-3"></span>
-                <div class="text">
-                  <strong class="d-block heading">Visit our Location</strong>
-                  <span class="excerpt">@Model.businessProfile.BusinessProfile_address</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 mb-3 mb-lg-0">
-              <div class="d-flex quick-info-2">
-                <span class="icon icon-phone mr-3"></span>
-                <div class="text">
-                  <strong class="d-block heading">Call us today</strong>
-                  <span class="excerpt"><a href="#">@Model.businessProfile.BusinessProfile_phone</a></span>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 mb-3 mb-lg-0">
-              <div class="d-flex quick-info-2">
-                <span class="icon icon-envelope mr-3"></span>
-                <div class="text">
-                  <strong class="d-block heading">Send us a message</strong>
-                  <span class="excerpt"><a href="#">@Model.businessProfile.BusinessProfile_email</a></span>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 mb-3 mb-lg-0">
-              <div class="d-flex quick-info-2">
-                <span class="icon icon-clock-o mr-3"></span>
-                <div class="text">
-                  <strong class="d-block heading">Opening hours</strong>
-                  <span class="excerpt">Mon-Fri 7:AM - 5PM</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    @Html.Raw(@final_offeredServiceList_inner_html)
 
-    <div class="block-services-1 py-5">
-      <div class="container">
-        <div class="row">
-          <div class="mb-4 mb-lg-0 col-sm-6 col-md-6 col-lg-3">
-            <h3 class="mb-3">What We Offer</h3>
-            <p>Our offerings are meticulously designed to cater to both beginners and seasoned practitioners, with a special focus on Royal Yoga and Hatha Yoga.</p>
-          </div>
-          <div class="mb-4 mb-lg-0 col-sm-6 col-md-6 col-lg-3">
-            <div class="block-service-1-card">
-              <a href="#" class="thumbnail-link d-block mb-4"><img src="images/hathayoga-3.jpg" alt="Image" class="img-fluid"></a>
-              <h3 class="block-service-1-heading mb-3"><a href="#">Royal Yoga</a></h3>
-              <div class="block-service-1-excerpt"><p>Unwind, de-stress, and revitalize from head to toe. Thai Massage combines ancient techniques with guided movement, targeting tension, boosting circulation, and restoring balance.</p></div>
-              <p><a href="royalyoga.html" class="d-inline-flex align-items-center block-service-1-more"><span>Find out more</span> <span class="icon-keyboard_arrow_right icon"></span></a></p>
-            </div>
-          </div>
-          <div class="mb-4 mb-lg-0 col-sm-6 col-md-6 col-lg-3">
-            <div class="block-service-1-card">
-              <a href="#" class="thumbnail-link d-block mb-4"><img src="images/zaq.jpg"alt="Image" class="img-fluid"></a>
-              <h3 class="block-service-1-heading mb-3"><a href="#">Hatha Yoga</a></h3>
-              <div class="block-service-1-excerpt"><p>Dance with your breath, bend like a willow and unlock the door to inner peace through the mindful movements and rhythmic breaths of Hatha Yoga.</p></div>
-              <p><a href="hathayoga.html" class="d-inline-flex align-items-center block-service-1-more"><span>Find out more</span> <span class="icon-keyboard_arrow_right icon"></span></a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="scroll-container">
       <img src="images/0N5A3968.jpg" alt="Cinque Terre" class="img">

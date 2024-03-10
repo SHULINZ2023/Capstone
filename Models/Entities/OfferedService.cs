@@ -13,7 +13,7 @@ namespace Models.Entities
         public string ? OfferedService_name { get; set; }
         public string ? OfferedService_contact {get;set;}
         public string ? OfferedService_desc {get;set;}
-        public string ? OfferedService_photo_url {get;set;}
+        public string ? OfferedService_photo_uri {get;set;}
         public string ? Kind1_foto1_uri {get;set;}
         public string ? Kind1_foto2_uri {get;set;}
         public string ? Kind1_foto3_uri {get;set;}

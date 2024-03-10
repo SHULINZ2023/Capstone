@@ -1,20 +1,392 @@
 {
   "Files": [
     {
-      "Id": "/Users/shulinzhang/myDotNetMVCApp/obj/Debug/net7.0/scopedcss/projectbundle/myDotNetMVCApp.bundle.scp.css",
-      "PackagePath": "staticwebassets/myDotNetMVCApp.bundle.scp.css"
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/css/.DS_Store",
+      "PackagePath": "staticwebassets/css/.DS_Store"
     },
     {
-      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/css/site.css",
-      "PackagePath": "staticwebassets/css/site.css"
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/css/aos.css",
+      "PackagePath": "staticwebassets/css/aos.css"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/css/bootstrap-datepicker.css",
+      "PackagePath": "staticwebassets/css/bootstrap-datepicker.css"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/css/bootstrap/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/css/bootstrap/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/css/bootstrap/bootstrap.css",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.css"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/css/bootstrap/mixins/_clearfix.css",
+      "PackagePath": "staticwebassets/css/bootstrap/mixins/_clearfix.css"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/css/bootstrap/utilities/_align.css",
+      "PackagePath": "staticwebassets/css/bootstrap/utilities/_align.css"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/css/jquery-ui.css",
+      "PackagePath": "staticwebassets/css/jquery-ui.css"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/css/magnific-popup.css",
+      "PackagePath": "staticwebassets/css/magnific-popup.css"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/css/mediaelementplayer.css",
+      "PackagePath": "staticwebassets/css/mediaelementplayer.css"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/css/owl.carousel.min.css",
+      "PackagePath": "staticwebassets/css/owl.carousel.min.css"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/css/owl.theme.default.min.css",
+      "PackagePath": "staticwebassets/css/owl.theme.default.min.css"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/css/rangeslider.css",
+      "PackagePath": "staticwebassets/css/rangeslider.css"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/css/style.css",
+      "PackagePath": "staticwebassets/css/style.css"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/css/style.css.map",
+      "PackagePath": "staticwebassets/css/style.css.map"
     },
     {
       "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/js/site.js",
-      "PackagePath": "staticwebassets/js/site.js"
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/fonts/.DS_Store",
+      "PackagePath": "staticwebassets/fonts/.DS_Store"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/fonts/flaticon/.DS_Store",
+      "PackagePath": "staticwebassets/fonts/flaticon/.DS_Store"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/fonts/flaticon/backup.txt",
+      "PackagePath": "staticwebassets/fonts/flaticon/backup.txt"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/fonts/flaticon/font/Flaticon.eot",
+      "PackagePath": "staticwebassets/fonts/flaticon/font/Flaticon.eot"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/fonts/flaticon/font/Flaticon.svg",
+      "PackagePath": "staticwebassets/fonts/flaticon/font/Flaticon.svg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/fonts/flaticon/font/Flaticon.ttf",
+      "PackagePath": "staticwebassets/fonts/flaticon/font/Flaticon.ttf"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/fonts/flaticon/font/Flaticon.woff",
+      "PackagePath": "staticwebassets/fonts/flaticon/font/Flaticon.woff"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/fonts/flaticon/font/Flaticon.woff2",
+      "PackagePath": "staticwebassets/fonts/flaticon/font/Flaticon.woff2"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/fonts/flaticon/font/_flaticon.scss",
+      "PackagePath": "staticwebassets/fonts/flaticon/font/_flaticon.scss"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/fonts/flaticon/font/flaticon.css",
+      "PackagePath": "staticwebassets/fonts/flaticon/font/flaticon.css"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/fonts/flaticon/font/flaticon.html",
+      "PackagePath": "staticwebassets/fonts/flaticon/font/flaticon.html"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/fonts/flaticon/license/license.pdf",
+      "PackagePath": "staticwebassets/fonts/flaticon/license/license.pdf"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/fonts/icomoon/Read Me.txt",
+      "PackagePath": "staticwebassets/fonts/icomoon/Read Me.txt"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/fonts/icomoon/demo-files/demo.css",
+      "PackagePath": "staticwebassets/fonts/icomoon/demo-files/demo.css"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/fonts/icomoon/demo-files/demo.js",
+      "PackagePath": "staticwebassets/fonts/icomoon/demo-files/demo.js"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/fonts/icomoon/demo.html",
+      "PackagePath": "staticwebassets/fonts/icomoon/demo.html"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/fonts/icomoon/fonts/icomoon.eot",
+      "PackagePath": "staticwebassets/fonts/icomoon/fonts/icomoon.eot"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/fonts/icomoon/fonts/icomoon.svg",
+      "PackagePath": "staticwebassets/fonts/icomoon/fonts/icomoon.svg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/fonts/icomoon/fonts/icomoon.ttf",
+      "PackagePath": "staticwebassets/fonts/icomoon/fonts/icomoon.ttf"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/fonts/icomoon/fonts/icomoon.woff",
+      "PackagePath": "staticwebassets/fonts/icomoon/fonts/icomoon.woff"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/fonts/icomoon/selection.json",
+      "PackagePath": "staticwebassets/fonts/icomoon/selection.json"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/fonts/icomoon/style.css",
+      "PackagePath": "staticwebassets/fonts/icomoon/style.css"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/.DS_Store",
+      "PackagePath": "staticwebassets/images/.DS_Store"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/0N5A3931.jpg",
+      "PackagePath": "staticwebassets/images/0N5A3931.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/0N5A3965.jpg",
+      "PackagePath": "staticwebassets/images/0N5A3965.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/0N5A3968.jpg",
+      "PackagePath": "staticwebassets/images/0N5A3968.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/0N5A3972-2.jpg",
+      "PackagePath": "staticwebassets/images/0N5A3972-2.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/0N5A3972-3.jpg",
+      "PackagePath": "staticwebassets/images/0N5A3972-3.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/0N5A3984.jpg",
+      "PackagePath": "staticwebassets/images/0N5A3984.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/0N5A3990.jpg",
+      "PackagePath": "staticwebassets/images/0N5A3990.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/0N5A3993.jpg",
+      "PackagePath": "staticwebassets/images/0N5A3993.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/0N5A3999.jpg",
+      "PackagePath": "staticwebassets/images/0N5A3999.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/0N5A4027.jpg",
+      "PackagePath": "staticwebassets/images/0N5A4027.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/0N5A4034.jpg",
+      "PackagePath": "staticwebassets/images/0N5A4034.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/IBD LOGO .jpg",
+      "PackagePath": "staticwebassets/images/IBD LOGO .jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/asd.jpg",
+      "PackagePath": "staticwebassets/images/asd.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/comment_vcard.jpg",
+      "PackagePath": "staticwebassets/images/comment_vcard.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/hathayoga-1.jpg",
+      "PackagePath": "staticwebassets/images/hathayoga-1.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/hathayoga-2.jpg",
+      "PackagePath": "staticwebassets/images/hathayoga-2.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/hathayoga-3.jpg",
+      "PackagePath": "staticwebassets/images/hathayoga-3.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/hathta.webp",
+      "PackagePath": "staticwebassets/images/hathta.webp"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/hero_bg_1.jpg",
+      "PackagePath": "staticwebassets/images/hero_bg_1.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/hero_bg_2.jpg",
+      "PackagePath": "staticwebassets/images/hero_bg_2.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/image13.jpg",
+      "PackagePath": "staticwebassets/images/image13.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/img_1.jpg",
+      "PackagePath": "staticwebassets/images/img_1.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/img_2.jpg",
+      "PackagePath": "staticwebassets/images/img_2.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/img_3.jpg",
+      "PackagePath": "staticwebassets/images/img_3.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/img_4.jpg",
+      "PackagePath": "staticwebassets/images/img_4.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/index1.jpg",
+      "PackagePath": "staticwebassets/images/index1.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/indexpic.jpg",
+      "PackagePath": "staticwebassets/images/indexpic.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/person_1.jpg",
+      "PackagePath": "staticwebassets/images/person_1.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/person_2.jpg",
+      "PackagePath": "staticwebassets/images/person_2.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/person_3.jpg",
+      "PackagePath": "staticwebassets/images/person_3.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/person_4.jpg",
+      "PackagePath": "staticwebassets/images/person_4.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/person_5.jpg",
+      "PackagePath": "staticwebassets/images/person_5.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/person_7.jpg",
+      "PackagePath": "staticwebassets/images/person_7.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/tghbn.PNG",
+      "PackagePath": "staticwebassets/images/tghbn.PNG"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/yoga-3338691_1280.jpg",
+      "PackagePath": "staticwebassets/images/yoga-3338691_1280.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/zaq.jpg",
+      "PackagePath": "staticwebassets/images/zaq.jpg"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/js/.DS_Store",
+      "PackagePath": "staticwebassets/js/.DS_Store"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/js/aos.js",
+      "PackagePath": "staticwebassets/js/aos.js"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/js/bootstrap-datepicker.min.js",
+      "PackagePath": "staticwebassets/js/bootstrap-datepicker.min.js"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/js/jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets/js/jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/js/jquery-migrate-3.0.1.min.js",
+      "PackagePath": "staticwebassets/js/jquery-migrate-3.0.1.min.js"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/js/jquery-ui.js",
+      "PackagePath": "staticwebassets/js/jquery-ui.js"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/js/jquery.animateNumber.min.js",
+      "PackagePath": "staticwebassets/js/jquery.animateNumber.min.js"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/js/jquery.countdown.min.js",
+      "PackagePath": "staticwebassets/js/jquery.countdown.min.js"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/js/jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets/js/jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/js/jquery.stellar.min.js",
+      "PackagePath": "staticwebassets/js/jquery.stellar.min.js"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/js/jquery.waypoints.min.js",
+      "PackagePath": "staticwebassets/js/jquery.waypoints.min.js"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/js/main.js",
+      "PackagePath": "staticwebassets/js/main.js"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/js/mediaelement-and-player.min.js",
+      "PackagePath": "staticwebassets/js/mediaelement-and-player.min.js"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/js/owl.carousel.min.js",
+      "PackagePath": "staticwebassets/js/owl.carousel.min.js"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/js/popper.min.js",
+      "PackagePath": "staticwebassets/js/popper.min.js"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/js/rangeslider.min.js",
+      "PackagePath": "staticwebassets/js/rangeslider.min.js"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/js/slick.min.js",
+      "PackagePath": "staticwebassets/js/slick.min.js"
+    },
+    {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/js/typed.js",
+      "PackagePath": "staticwebassets/js/typed.js"
     },
     {
       "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/lib/bootstrap/LICENSE",
