@@ -33,6 +33,7 @@ namespace Services
                 OfferedServices = _DbContext.OfferedServices.Where(e=>e.Status=="approved").ToList(),
                  businessProfile = _DbContext.BusinessProfiles.FirstOrDefault() ?? throw new DataNotFoundException("BusinessProfile Not found"),
                  sections = _DbContext.Sections.Where(e=>e.Status=="approved").ToList() ?? throw new DataNotFoundException("Sections Not found"),
+                 Galleries= _DbContext.Galleries.Where(e=>e.Status=="approved").ToList() ?? throw new DataNotFoundException("Galleries not found"),
                  
             };
             var section_offeredService = indexViewModel.sections.Find(e=>e.Section_type=="OfferedServices"); 

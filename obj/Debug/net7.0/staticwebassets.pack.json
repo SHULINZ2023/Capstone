@@ -217,6 +217,10 @@
       "PackagePath": "staticwebassets/images/IBD LOGO .jpg"
     },
     {
+      "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/Power_Yoga.png",
+      "PackagePath": "staticwebassets/images/Power_Yoga.png"
+    },
+    {
       "Id": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/asd.jpg",
       "PackagePath": "staticwebassets/images/asd.jpg"
     },

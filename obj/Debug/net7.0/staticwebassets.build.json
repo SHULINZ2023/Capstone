@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "f6RL1KWjpj6V9oGxMDezfFvmxG+MlhL4OWxfuRnclUE=",
+  "Hash": "eZbPwezt1aIyz2xX1Eb7Ih76M/chIjmXmikG18b1Ejw=",
   "Source": "myDotNetMVCApp",
   "BasePath": "_content/myDotNetMVCApp",
   "Mode": "Default",
@@ -1290,6 +1290,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/person_7.jpg"
+    },
+    {
+      "Identity": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/Power_Yoga.png",
+      "SourceId": "myDotNetMVCApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/",
+      "BasePath": "_content/myDotNetMVCApp",
+      "RelativePath": "images/Power_Yoga.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/Power_Yoga.png"
     },
     {
       "Identity": "/Users/shulinzhang/myDotNetMVCApp/wwwroot/images/tghbn.PNG",

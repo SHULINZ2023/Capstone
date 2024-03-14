@@ -12,4 +12,5 @@ public class IndexViewModel
     [Required]
     public BusinessProfile businessProfile {get;set;}
     public List<Section> ? sections{get;set;}
+    public List<Gallery> ? Galleries{get;set;}
 }

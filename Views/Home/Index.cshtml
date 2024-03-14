@@ -8,8 +8,7 @@
   // populate 2nd section OfferedService 
   var section_offeredService = Model.sections.Find(e=>e.Section_type=="OfferedServices");  
 
-  var offeredService_inner_html = section_offeredService.Section_INNER_HTML.Replace("@Section_name",
-  section_offeredService.Section_name);
+  var offeredService_inner_html = section_offeredService.Section_INNER_HTML.Replace("@Section_name",section_offeredService.Section_name).Replace("@Section_desc",section_offeredService.Section_desc);
   // populate offered service list
 
   string template_inner_html="<div class=\"mb-4 mb-lg-0 col-sm-6 col-md-6 col-lg-3\">"
@@ -32,7 +31,17 @@
     }
     //replace 
     var final_offeredServiceList_inner_html = offeredService_inner_html.Replace("@OfferServiceList",serviceList_inner_html);
+    //populate gallery
+    var section_gallery = Model.sections.Find(e=>e.Section_type=="Gallery");
+    string gallery_inner_html_template = "<img src=@foto_uri alt=\"Cinque Terre\" class=\"img\">";
+    var gallery_inner_html = "";
+    foreach(var gallery in Model.Galleries)
+    {
+      gallery_inner_html = gallery_inner_html + gallery_inner_html_template.Replace("@foto_uri",gallery.Gallery_photo_uri);
 
+    }
+
+    var final_gallery_inner_html = section_gallery.Section_INNER_HTML.Replace("@galleries",gallery_inner_html);
 }
 
 <!DOCTYPE html>
@@ -172,15 +181,9 @@
 
     @Html.Raw(@final_offeredServiceList_inner_html)
 
-
-    <div class="scroll-container">
-      <img src="images/0N5A3968.jpg" alt="Cinque Terre" class="img">
-      <img src="images/0N5A3972-3.jpg" alt="Cinque Terre" class="img">
-      <img src="images/0N5A3965.jpg" alt="Cinque Terre" class="img">
-      <img src="images/0N5A3990.jpg" alt="Cinque Terre" class="img">
-      <img src="images/0N5A3984.jpg" alt="Northern Lights" class="img">
-      <img src="images/0N5A3993.jpg" alt="Mountains" class="img">
-    </div>
+    <!-- Section 3 Gallery-->
+    @Html.Raw(@final_gallery_inner_html)
+    
     
     <div class="block-half-content-1 d-block d-lg-flex mt-5">
       <div class="block-half-content-img" style="background-image: url('images/indexpic.jpg')">
